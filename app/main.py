@@ -9,7 +9,7 @@ from api import ping_response, start_response, move_response, end_response
 @bottle.route('/')
 def index():
     return '''
-    tommy-yum is ready for battle
+    waypple team is ready for battle
     '''
 
 @bottle.route('/static/<path:path>')
