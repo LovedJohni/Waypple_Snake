@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-export REACT_APP_SERVER=http://localhost:3009
-(cd ./client; yarn start)

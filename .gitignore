@@ -1,14 +1,5 @@
-scripts/.env
-scripts/env-*
-
-# editors
-.idea*
-.vs-code/
-.vscode/
-
-node_modules
-.DS_Store
-
-.docker-data/
-
-client/build
+*.DS_Store
+*.pyc
+battlesnake
+.idea
+.vscode
