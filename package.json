@@ -1,0 +1,22 @@
+{
+  "author": "Dylan Kendal <dylan.kendal@shopify.com>",
+  "devDependencies": {
+    "cypress": "^2.0.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.1.0",
+    "prettier": "^1.10.2"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "name": "battle_snake",
+  "repository": "git@github.com:Dkendal/battle_snake.git",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "install": "cd ./assets && yarn",
+    "precommit": "lint-staged",
+    "webpack": "cd ./assets && yarn webpack",
+    "webpack:production": "NODE_ENV=production yarn webpack"
+  },
+  "version": "1.0.0"
+}

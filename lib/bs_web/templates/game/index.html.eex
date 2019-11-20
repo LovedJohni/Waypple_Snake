@@ -1,0 +1,38 @@
+<h2>Listing games</h2>
+
+<%= link "New game", to: game_path(@conn, :new) %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Game number</th>
+      <th># of players</th>
+      <th>Dimensions</th>
+      <th>Max # of food</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= for game <- @games do %>
+      <tr>
+        <td>
+          <%= game.id %>
+        </td>
+        <td>
+          <%= game.snakes |> length %>
+        </td>
+        <td>
+          <%= "#{game.height}x#{game.width}" %>
+        </td>
+        <td>
+          <%= game.max_food %>
+        </td>
+        <td>
+          <%= link "Show", to: game_path(@conn, :show, game) %>
+          <%= link "Edit", to: game_path(@conn, :edit, game) %>
+          <%= link "Delete", to: game_path(@conn, :delete, game), method: :delete, data: [confirm: "Are you sure?"] %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

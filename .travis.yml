@@ -1,0 +1,21 @@
+language: elixir
+
+notifications:
+  email: false
+
+elixir:
+  - 1.4
+
+otp_release:
+  - 19.0
+
+env:
+  - MIX_ENV=test
+
+cache:
+  directories:
+    - ./deps
+    - ./_build
+
+# coveralls is down
+# script: mix coveralls.travis
