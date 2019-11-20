@@ -1,0 +1,24 @@
+{
+    "extends": [
+        "standard",
+        "plugin:react/recommended"
+    ],
+    "rules": {
+        "react/jsx-key": "off",
+        "react/prop-types": "off",
+        "space-before-function-paren": [
+            "error",
+            "never"
+        ]
+    },
+    "globals": {
+        "fetch": false
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "classes": true,
+        "jsx": true,
+        "ecmaVersion": 6
+    }
+}
